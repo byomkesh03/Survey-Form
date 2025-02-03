@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the form below to participate in the survey.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Choose a programming language:</label>
+                <select id="dropdown">
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="java">Java</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>What do you use for coding?</label>
+                <input type="radio" name="coding-tool" value="vs-code" id="vs-code">
+                <label for="vs-code">VS Code</label>
+
+                <input type="radio" name="coding-tool" value="sublime-text" id="sublime-text">
+                <label for="sublime-text">Sublime Text</label>
+            </div>
+
+            <div class="form-group">
+                <label>Which technologies are you familiar with?</label>
+                <input type="checkbox" name="tech" value="html" id="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="tech" value="css" id="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="tech" value="javascript" id="javascript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" placeholder="Write your comments here..."></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
 
